@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hangman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Hangman</h1>
+
+    <div class="row q" id="question">Loading question…</div>
+    <div class="row word" id="maskedWord">_ _ _ _ _ _</div>
+
+    <div class="bar">
+      <div class="life">Lives: <span id="lives">6</span></div>
+      <div class="controls">
+        <button id="newBtn" class="btn">New Question</button>
+        <button id="resetBtn" class="btn secondary">Reset</button>
+      </div>
+    </div>
+
+    <div class="row letters" id="letters"></div>
+    <div class="row out" id="status"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
